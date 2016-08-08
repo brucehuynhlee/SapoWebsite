@@ -1,0 +1,832 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapo.vn</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=latin,vietnamese" rel="stylesheet" type="text/css" />
+    <link href="~/Source/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Source/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Source/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Source/library/owl/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="~/Source/library/owl/owl.theme.css" rel="stylesheet" type="text/css" />
+    <script src="~/Source/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="~/Source/library/owl/owl.carousel.min.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="index header">
+            <header id="menu-nav" class="main-menu">
+                <div class="container">
+                    <div class="row hidden-sm hidden-xs hidden-md">
+                        <div class="col-md-2">
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="~/Source/images/logo.svg" style="height:80px;" alt="sapo.vn" class="img img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 ">
+                            <ul class="list-unstyled nav pull-right">
+                                <li>
+                                    <a href="/giai-phap.html">Giải pháp</a>
+                                    <ul class="list-unstyled sub-nav solution">
+                                        <li class="icontop"></li>
+                                        <li><a href="/quan-ly-cua-hang-thoi-trang.html">Cửa hàng thời trang</a></li>
+                                        <li><a href="/quan-ly-cua-hang-tap-hoa.html">Cửa hàng tạp hóa</a></li>
+                                        <li><a href="/quan-ly-cua-hang-dien-thoai.html">Cửa hàng điện thoại</a></li>
+                                        <li><a href="/quan-ly-cua-hang-luu-dong.html">Cửa hàng lưu động</a></li>
+                                        <li><a href="/quan-ly-cua-hang-me-va-be.html">Cửa hàng mẹ và bé</a></li>
+                                        <li><a href="/quan-ly-cua-hang-my-pham.html">Cửa hàng mỹ phẩm</a></li>
+                                        <li><a href="/quan-ly-sieu-thi-mini.html">Siêu thị mini</a></li>
+                                        <li><a href="/quan-ly-cua-hang-vat-lieu-xay-dung.html">Cửa hàng VLXD</a></li>
+                                        <li><a href="/quan-ly-cua-hang-sach.html">Cửa hàng sách</a></li>
+                                        <li><a href="/quan-ly-cua-hang-dien-may.html">Cửa hàng điện máy</a></li>
+                                        <li><a href="/quan-ly-cua-hang-do-choi-tre-em.html">Cửa hàng đồ chơi</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/tinh-nang-noi-bat.html">Tính năng</a></li>
+                                <li><a href="/bang-gia.html">Bảng giá</a></li>
+                                <li><a href="http://saposhop.vn" target="_blank">Phần cứng</a></li>
+                                <li><a href="#">Khách hàng</a></li>
+                                <li><a href="http://blog.sapo.vn/" target="_blank">Blog</a></li>
+                                <li>
+                                    <a href="#">Thêm <i class="fa fa-angle-down"></i></a>
+                                    <ul class="list-unstyled sub-nav add">
+                                        <li class="icontop"></li>
+                                        <li class=""><a href="/ve-chung-toi.html">Về chúng tôi</a></li>
+                                        <li>
+                                            <a target="_blank" href="http://support.sapo.vn">Trợ giúp</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://doc.sapo.vn/hinh-thuc-thanh-toan-154.html">
+                                                Hướng dẫn thanh toán
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="https://doc.sapo.vn/faq.html">
+                                                Câu hỏi thường gặp
+                                            </a>
+                                        </li>
+                                        <li><a href="/lien-he.html">Liên hệ</a></li>
+
+
+                                    </ul>
+
+
+                                </li>
+                                <li><a href="#" onclick="return login()">Đăng nhập</a></li>
+                                <li class="resigter-btn"><a href="#" onclick="openCreateStorePopup(this);" style="border:none">Đăng kí</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row hidden-lg mobile">
+                        <div class="col-xs-12">
+                            <div class="mobnav-btn">
+                                <a href="#" id="mobnavbtn"></a>
+                            </div>
+                            <div class="mob-logo">
+                                <a href="#">
+                                    <img src="~/Source/images/logo.svg" style="height:50px" alt="SAPO.VN">
+                                </a>
+                            </div>
+
+                            <div class="mob-resigter-btn hidden-sm hidden-xs">
+                                <a href="#">Đăng kí</a>
+                            </div>
+                            <div class="mob-login-nav hidden-sm hidden-xs">
+                                <a href="#" onclick="">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobnav-content hidden-lg clearfix">
+                        <ul class="list-unstyled mobnav" style="display:none">
+                            <li class="show-child">
+                                <a href="/giai-phap.html">Giải pháp <em><i class="fa fa-angle-right"></i></em></a>
+                                <ul class="list-solution">
+                                    <li><a href="/quan-ly-cua-hang-thoi-trang.html">Cửa hàng thời trang</a></li>
+                                    <li><a href="/quan-ly-cua-hang-tap-hoa.html">Cửa hàng tạp hóa</a></li>
+                                    <li><a href="/quan-ly-cua-hang-dien-thoai.html">Cửa hàng điện thoại</a></li>
+                                    <li><a href="/quan-ly-cua-hang-luu-dong.html">Cửa hàng lưu động</a></li>
+                                    <li><a href="/quan-ly-cua-hang-me-va-be.html">Cửa hàng mẹ và bé</a></li>
+                                    <li><a href="/quan-ly-cua-hang-my-pham.html">Cửa hàng mỹ phẩm</a></li>
+                                    <li><a href="/quan-ly-sieu-thi-mini.html">Siêu thị mini</a></li>
+                                    <li><a href="/quan-ly-cua-hang-vat-lieu-xay-dung.html">Cửa hàng VLXD</a></li>
+                                    <li><a href="/quan-ly-cua-hang-sach.html">Cửa hàng sách</a></li>
+                                    <li><a href="/quan-ly-cua-hang-dien-may.html">Cửa hàng điện máy</a></li>
+                                    <li><a href="/quan-ly-cua-hang-do-choi-tre-em.html">Cửa hàng đồ chơi</a></li>
+                                </ul>
+                            </li>
+                            <li class="show-child">
+                                <a href="/tinh-nang-noi-bat.html">Tính năng <em><i class="fa fa-angle-right"></i></em></a>
+                                <ul class="list-solution">
+                                    <li><a href="/tinh-nang-noi-bat.html">Tính năng nổi bật</a></li>
+                                    <li><a href="/ho-tro-mobile-toan-dien.html">Hỗ trợ mobile toàn diện</a></li>
+                                    <li><a href="/ban-hang-nhanh-chong.html">Bán hàng nhanh chóng</a></li>
+                                    <li><a href="/quan-ly-hang-hoa.html">Quản lý hàng hóa</a></li>
+                                    <li><a href="/quan-ly-nhan-vien.html">Quản lý nhân viên</a></li>
+                                    <li><a href="/quan-ly-kho-linh-hoat.html">Quản lý kho linh hoạt</a></li>
+                                    <li><a href="/quan-ly-so-quy-tien-mat.html">Quản lý quỹ tiền mặt</a></li>
+                                    <li><a href="/quan-ly-khuyen-mai.html">Quản lý khuyến mãi</a></li>
+                                    <li><a href="/cham-soc-khach-hang.html">Chăm sóc khách hàng</a></li>
+                                    <li><a href="/he-thong-bao-cao-ban-hang.html">Báo cáo chính xác</a></li>
+                                    <li><a href="/ung-dung-cong-nghe-hien-dai.html">Công nghệ và bảo mật</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/bang-gia.html">Bảng giá</a></li>
+                            <li><a href="http://shop.sapo.vn">Phần cứng</a></li>
+                            <li><a href="#">Khách hàng</a></li>
+                            <li><a href="http://blog.sapo.vn">Blog</a></li>
+                            <li class="show-child">
+                                <a href="#">Thêm <em><i class="fa fa-angle-right"></i></em></a>
+                                <ul class="list-solution">
+                                    <li><a href="/ve-chung-toi.html">Về chúng tôi</a></li>
+                                    <li>
+                                        <a target="_blank" href="http://support.sapo.vn">Trợ giúp</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://doc.sapo.vn/hinh-thuc-thanh-toan-154.html">
+                                            Hướng dẫn thanh toán
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://doc.sapo.vn/faq.html">
+                                            Câu hỏi thường gặp
+                                        </a>
+                                    </li>
+                                    <li><a href="/lien-he.html">Liên hệ</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+
+                    $(document).ready(function () {
+                        $("ul.mobnav li.show-child > a").click(function () {
+                            $(this).parent().find(".list-solution").slideToggle("slow");
+                            $(this).parent().find(".fa-angle-right").toggleClass("rotate");
+                            return false;
+                        });
+                    });
+                </script>
+            </header>
+            <div class="header-wrapper">
+                <h1>Khách hàng tiêu biểu của Sapo</h1>
+                <div id="inline"></div>
+                <p>Chúng tôi tự hào đồng hành cùng công việc quản lí bán hàng của <br />hàng nghìn shop , doanh nghiệp khắp Việt Nam</p>
+                <a href="#" class="btn-try">Dùng thử miễn phí</a>
+            </div>
+        </div>
+
+        <!--Begin sapo content-->
+        <div class="sapo-content">
+
+            <!--Begin sapo customer-->
+            <section class="sapo_customers">
+                <div class="container">
+                    <div class="shop-title">
+                        <h5>Shop thời trang Torano</h5>
+                        <p>Sự lịch lãm cùng đẳng cấp hoàn toàn mới cho các quý ông Việt</p>
+                    </div>
+                    <div class="shop-image">
+                        <img class="img img-responsive" src="~/Source/images/shopTorano.png" />
+                    </div>
+                    <div class="shop-text">
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<br /><br />
+
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                            non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+                            minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                            vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" <br /><br />
+
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                            culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                            distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+                            facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
+                            aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                        </p>
+                    </div>
+                    <div class="shop-info">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <dl>
+                                    <dt>Thông tin cửa hàng</dt>
+                                    <dd>-Sed ut perspiciatis unde omnis iste natus error sit voluptate</dd>
+                                    <dd>-Temporibus autem quibusdam et aut officiis aut reiciendis.</dd>
+                                    <dd>-Exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea.</dd>
+                                    <dd>-Temporibus autem quibusdam et aut officiis aut reiciendis.</dd>
+                                    <dd>-Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</dd>
+                                </dl>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="pull-right">
+                                    <img class="img img-responsive" src="~/Source/images/infoTorano.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-more">
+                        <div class="shop-title">
+                            <h5>Xem thêm khách hàng của Sapo</h5>
+                        </div>
+                        <div class="slider">
+                            <div id="owl" class="owl-carousel">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img src="/Source/images/slider1.png" class="img img-responsive" />
+                                            <h5 class="title">Shop thoi trang torana</h5>
+                                            <p class="address"><em>Địa chỉ : 266 Đội Cấn - Ba Đình - Hà Nội</em></p>
+                                            <p class="summary">
+                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt..."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img src="/Source/images/slider2.png" class="img img-responsive" />
+                                            <h5 class="title">Shop thoi trang torana</h5>
+                                            <p class="address"><em>Địa chỉ : 266 Đội Cấn - Ba Đình - Hà Nội</em></p>
+                                            <p class="summary">
+                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt..."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img src="/Source/images/slider3.png" class="img img-responsive" />
+                                            <h5 class="title">Shop thoi trang torana</h5>
+                                            <p class="address"><em>Địa chỉ : 266 Đội Cấn - Ba Đình - Hà Nội</em></p>
+                                            <p class="summary">
+                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt..."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img src="/Source/images/slider3.png" class="img img-responsive" />
+                                            <h5 class="title">Shop thoi trang torana</h5>
+                                            <p class="address"><em>Địa chỉ : 266 Đội Cấn - Ba Đình - Hà Nội</em></p>
+                                            <p class="summary">
+                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt..."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-showmore">
+                            <a href="#">Xem thêm khách hàng khác</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End sapo customer-->
+            <!--Begin sapo support-->
+            <section class="sapo_supports">
+                <div class="home-supports">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <div class="text-center padding-md-bottom">
+                                <h3>Các chuyên viên tư vấn<span> của chúng tôi</span></h3>
+                                <p class="caption">luôn sẵn sàng hỗ trợ bạn</p>
+                            </div>
+
+                            <div class="item text-center custom-supports margin-lg-bottom  ">
+                                <div class="avatar margin-bottom">
+                                    <img class="img-responsive" src="~/Source/images/supportNhan.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <span class="uppercase">Nguyễn Thị Nhẫn</span>
+                                </div>
+                                <div class="position">
+                                    Tư vấn viên - <span>0983.654.654</span>
+                                </div>
+                                <div class="nick">
+                                    <a class="skype" href="#">
+                                        <img src="~/Source/images/skype-icon.png" alt="" class="icon-skype event-Skype-contact">
+                                    </a>
+                                    <span class="clear"></span>
+                                </div>
+                            </div>
+                            <div class="item text-center custom-supports margin-lg-bottom  ">
+                                <div class="avatar margin-bottom">
+                                    <img class="img-responsive" src="~/Source/images/supportHien.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <span class="uppercase">Trần Ngọc Hiền</span>
+                                </div>
+                                <div class="position">
+                                    Tư vấn viên - <span>0983.654.654</span>
+                                </div>
+                                <div class="nick">
+                                    <a class="skype" href="skype:tien.ph?chat">
+                                        <img src="~/Source/images/skype-icon.png" alt="" class="icon-skype event-Skype-contact">
+                                    </a>
+                                    <span class="clear"></span>
+                                </div>
+                            </div>
+                            <div class="item text-center custom-supports margin-lg-bottom  ">
+                                <div class="avatar margin-bottom">
+                                    <img class="img-responsive" src="/Source/images/supportThuy.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <span class="uppercase">Nguyễn Thị Thúy</span>
+                                </div>
+                                <div class="position">
+                                    Tư vấn viên - <span>0983.654.654</span>
+                                </div>
+                                <div class="nick">
+                                    <a class="skype" href="#">
+                                        <img src="~/Source/images/skype-icon.png" alt="" class="icon-skype event-Skype-contact">
+                                    </a>
+                                    <span class="clear"></span>
+                                </div>
+                            </div>
+                            <div class="item text-center custom-supports margin-lg-bottom  ">
+                                <div class="avatar margin-bottom">
+                                    <img class="img-responsive" src="~/Source/images/supportAnh.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <span class="uppercase">Hoàng Trường Anh</span>
+                                </div>
+                                <div class="position">
+                                    Tư vấn viên - <span>0983.654.654</span>
+                                </div>
+                                <div class="nick">
+                                    <a class="skype" href="#">
+                                        <img src="~/Source/images/skype-icon.png" alt="" class="icon-skype event-Skype-contact">
+                                    </a>
+                                    <span class="clear"></span>
+                                </div>
+                            </div>
+                            <div class="item text-center custom-supports margin-lg-bottom visible-lg ">
+                                <div class="avatar margin-bottom">
+                                    <img class="img-responsive" src="~/Source/images/supportHoa.png" alt="">
+                                </div>
+                                <div class="name">
+                                    <span class="uppercase">Nguyễn Hồng Hoa</span>
+                                </div>
+                                <div class="position">
+                                    Tư vấn viên - <span>0983.654.654</span>
+                                </div>
+                                <div class="nick">
+                                    <a class="skype" href="#">
+                                        <img src="~/Source/images/skype-icon.png" alt="" class="icon-skype event-Skype-contact">
+                                    </a>
+                                    <span class="clear"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End sapo support-->
+            <!--Begin sapo 247-->
+            <section class="sapo_247">
+                <div class="index-other-info">
+                    <div class="container">
+                        <h3 class="text-center">Đồng hành 24/7 cùng công việc quản lý bán hàng của bạn</h3>
+                        <div class="col-sm-12">
+                            <div class="row col-md-10 col-md-offset-1 index-other-info__statistic no-padding-lr">
+                                <div class="col-md-6 col-xs-6 col-sm-6 text-center no-padding-xs">
+                                    <div class="other_info_icon_pr">
+                                        <div class="other_info_icon">
+                                            <a href="tel:19006750">
+                                                <i class="fa fa-phone" style="color: #fff;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="index-other-info__hot-line text-center"><span>Hotline:</span> 1900 6732</div>
+                                </div>
+                                <div class="col-md-6 col-xs-6 col-sm-6 text-center no-padding-xs">
+                                    <div class="other_info_icon_pr">
+                                        <div class="other_info_icon">
+                                            <a href="mailto:support@sapo.vn">
+                                                <i class="fa fa-envelope-o" style="color: #fff;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="index-other-info__hot-line text-center"><span>Email:</span> support@sapo.vn</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--End sapo 247-->
+            <!--Begin sapo trial-->
+            <section class="sapo_trial">
+                <div class="index-registration quick-registration new-registration">
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-12 col-md-12 bottom-registration text-center">
+                            <h3 class="text-large text-center">Dùng thử miễn phí 15 ngày</h3>
+                            <span>
+                                để trải nghiệm phần mềm quản lý bán hàng tối ưu nhất trên mobile
+                            </span>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-8 col-xs-12 input-name">
+                                    <input style="" id="site_name_bottom" class="input-site-name hidden-xs" value="" placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn" onkeypress="return onInputStoreName(event, this)" type="text" />
+                                </div>
+                                <div class="col-md-5 col-sm-4 col-xs-12 input-btn">
+                                    <a class="btn-registration" onclick="openCreateStorePopup(this);" href="javascript:;">Dùng thử miễn phí</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End sapo trial-->
+        </div>
+        <!--End sapo content-->
+        <!--Begin sapo footer-->
+        <div id="footer" class="sapo_footer">
+            <div class="sapo_footer_menu">
+                <div class="container">
+                    <!-- Begin.Sapo.vn menu -->
+                    <div class="sapo_footer_menu_linklist_f_pr sp_col_1">
+                        <div class="sapo_footer_menu_linklist">
+                            <h4>Sapo.vn</h4>
+                            <ul>
+                                <li>
+                                    <a href="/ve-chung-toi.html">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khách hàng</a>
+                                </li>
+                                <li>
+                                    <a href="/bang-gia.html">Bảng giá</a>
+                                </li>
+                                <li>
+                                    <a href="/tinh-nang-noi-bat.html">Tính năng </a>
+                                </li>
+                                <li>
+                                    <a href="/lien-he.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End.Sapo.vn menu -->
+                    <!-- Begin.Management software menu (hidden mobile)-->
+                    <div class="sapo_footer_menu_linklist_pr hidden-xs sp_col_2">
+                        <div class="sapo_footer_menu_linklist">
+                            <h4>Phần mềm quản lý</h4>
+                            <ul>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-thoi-trang.html">Cửa hàng thời trang</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-my-pham.html">Cửa hàng mĩ phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-tap-hoa.html">Cửa hàng tạp hóa</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-me-va-be.html">Cửa hàng mẹ &amp; bé</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-dien-may.html">Cửa hàng điện máy</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-do-choi-tre-em.html">Cửa hàng đồ chơi trẻ em</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sapo_footer_menu_linklist_pr hidden-xs sp_col_3">
+                        <div class="sapo_footer_menu_linklist">
+                            <h4>&nbsp;</h4>
+                            <ul>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-dien-thoai.html">Cửa hàng điện thoại</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-vat-lieu-xay-dung.html">Cửa hàng VLXD</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-luu-dong.html">Cửa hàng lưu động</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-cua-hang-sach.html">Cửa hàng sách</a>
+                                </li>
+                                <li>
+                                    <a href="/quan-ly-sieu-thi-mini.html">Siêu thị mini</a>
+                                </li>
+                                <li>
+                                    <a href="/tinh-nang-noi-bat.html">Ngành nghề khác</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End.Management software menu (hidden mobile)-->
+                    <!-- Begin.Supports menu -->
+                    <div class="sapo_footer_menu_linklist_pr hidden-xs sp_col_4">
+                        <div class="sapo_footer_menu_linklist">
+                            <h4>
+                                <a target="_blank" href="http://www.saposhop.vn" style="color:#fff">Thiết bị bán hàng</a>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="http://www.saposhop.vn/may-in-hoa-don">Máy in hóa đơn</a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" href="http://www.saposhop.vn/may-in-ma-vach">Máy in mã vạch</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://www.saposhop.vn/may-quet-ma-vach">Máy quét mã vạch</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://www.saposhop.vn/ngan-keo-dung-tien">Ngăn đựng tiền</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End.Supports menu -->
+                    <!-- Begin.Supports menu -->
+                    <div class="sapo_footer_menu_linklist_pr hidden-xs sp_col_5">
+                        <div class="sapo_footer_menu_linklist">
+                            <h4>Trợ giúp</h4>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://doc.sapo.vn/hinh-thuc-thanh-toan-154.html">Hướng dẫn thanh toán</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=4VNHSVKcTag&amp;list=PLe-q7zY3gILQcb28oSokeU3cmum9NRej9">Video hướng dẫn</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://doc.sapo.vn">Tài liệu tham khảo</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://doc.sapo.vn/faq.html">Câu hỏi thường gặp</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End.Supports menu -->
+                    <!-- Begin.Management software menu (Display mobile)-->
+                    <div class="sp_col_2_3_show_xs hidden-sm hidden-md hidden-lg">
+                        <div class="sapo_footer_menu_linklist_pr sp_col_2">
+                            <div class="sapo_footer_menu_linklist">
+                                <h4>Phần mềm quản lý</h4>
+                                <ul>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-thoi-trang.html">Cửa hàng thời trang</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-my-pham.html">Cửa hàng mĩ phẩm</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-tap-hoa.html">Cửa hàng tạp hóa</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-me-va-be.html">Cửa hàng mẹ &amp; bé</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-dien-may.html">Cửa hàng điện máy</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-do-choi-tre-em.html">Cửa hàng đồ chơi trẻ em</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sapo_footer_menu_linklist_pr sp_col_3">
+                            <div class="sapo_footer_menu_linklist">
+                                <h4>&nbsp;</h4>
+                                <ul>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-dien-thoai.html">Cửa hàng điện thoại</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-vat-lieu-xay-dung.html">Cửa hàng VLXD</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-luu-dong.html">Cửa hàng lưu động</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-cua-hang-sach.html">Cửa hàng sách</a>
+                                    </li>
+                                    <li>
+                                        <a href="/quan-ly-sieu-thi-mini.html">Siêu thị mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="/tinh-nang-noi-bat.html">Ngành nghề khác</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End.Management software menu (Display mobile)-->
+                    <!-- Begin.Social menu (Display desktop)-->
+                    <div class="sapo_footer_menu_linklist_pr sp_col_5 hidden-xs hidden-sm">
+                        <div class="sapo_footer_menu_linklist has_social_icon">
+                            <h4>Mạng xã hội</h4>
+                            <ul>
+                                <li class="facebook_ic">
+                                    <a target="_blank" href="https://www.facebook.com/sapo.vn/?fref=ts"><span class="social_icon"><i class="fa fa-facebook"></i></span> <span class="social_title">Facebook</span></a>
+                                </li>
+                                <li class="youtube_ic">
+                                    <a><span class="social_icon"><i class="fa fa-youtube"></i></span> <span class="social_title">Youtube</span></a>
+                                </li>
+                                <li class="instagram_ic">
+                                    <a><span class="social_icon"><i class="fa fa-instagram"></i></span> <span class="social_title">Instagram</span></a>
+                                </li>
+                                <li class="google_ic">
+                                    <a><span class="social_icon"><i class="fa fa-google-plus"></i></span> <span class="social_title">Google +</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End.Social menu (Display desktop)-->
+                </div>
+            </div>
+
+            <div class="sapo_footer_info">
+                <div class="container">
+                    <div class="sapo_footer_info_logo_pr">
+                        <div class="sapo_footer_info_logo">
+                            <img src="~/Source/images/logo.svg">
+                        </div>
+                    </div>
+
+                    <div class="sapo_footer_info_add_pr">
+                        <div class="sapo_footer_info_add">
+                            <ul>
+                                <li>
+                                    <span class="">Công ty cổ phần công nghệ DKT (DKT Technology JSC)</span>
+                                </li>
+                                <li>
+                                    <span class="">Trụ sở: Tầng 4 - Tòa nhà Hanoi Group - 442 Đội Cấn - Ba Đình - Hà Nội</span>
+                                </li>
+                                <li>
+                                    <span class="">Chi nhánh: Lầu 3 - Tòa nhà Lữ Gia - 70 Lữ Gia - P 15 - Q 11 - TP Hồ Chí Minh</span>
+                                </li>
+                                <!--<li>
+                                    <span class="">
+                                        Điện thoại: (04) 6688.0011
+                                    </span>
+                                </li>-->
+                                <li>
+                                    <span class="">
+                                        Tổng đài hỗ trợ khách hàng: 1900 6732
+
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="">
+
+                                        Tư vấn dịch vụ: 1900 6732 - Nhánh 1.
+
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="">
+
+                                        Chăm sóc khách hàng: 1900 6732 - Nhánh 2.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Begin.Social menu (Hidden desktop)-->
+                        <div class="sapo_footer_menu_linklist_pr hidden-md hidden-lg sp_col_5">
+                            <div class="sapo_footer_menu_linklist has_social_icon">
+                                <h4>Mạng xã hội</h4>
+                                <ul>
+                                    <li class="facebook_ic">
+                                        <a href="https://www.facebook.com/sapo.vn/?fref=ts"><span class="social_icon"><i class="fa fa-facebook"></i></span> <span class="social_title">Facebook</span></a>
+                                    </li>
+                                    <li class="youtube_ic">
+                                        <a href="#"><span class="social_icon"><i class="fa fa-youtube"></i></span> <span class="social_title">Youtube</span></a>
+                                    </li>
+                                    <li class="instagram_ic">
+                                        <a href="#"><span class="social_icon"><i class="fa fa-instagram"></i></span> <span class="social_title">Instagram</span></a>
+                                    </li>
+                                    <li class="google_ic">
+                                        <a href="#"><span class="social_icon"><i class="fa fa-google-plus"></i></span> <span class="social_title">Google +</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End.Social menu (Hidden desktop)-->
+                    </div>
+
+                    <!-- Begin.Sapo_adward (Hidden desktop)-->
+                    <div class="hidden-sm hidden-md hidden-lg col-xs-12 no-padding-lr">
+                        <div class="sapo_adward">
+                            <div class="sapo_adward_img_pr">
+                                <img class="omg img-responsive" src="~/Source/images/icon-cup.png">
+                            </div>
+                            <a href="#">
+                                Sản phẩm đạt giải Sao Khuê 2015
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- End.Sapo_adward (Hidden desktop)-->
+                </div>
+            </div>
+
+            <div class="sapo_footer_bottom">
+                <div class="container">
+                    <div class="xol-xs-12 col-sm-6 col-md-7 no-padding-l">
+                        <div class="sapo_copyright">
+                            <span>Copyright 2014 - 2016 Sapo.vn. Phần mềm quản lý bán hàng hỗ trợ mobile toàn diện nhất</span>
+                        </div>
+                    </div>
+
+                    <!-- Begin.Sapo_adward (Hidden mobile)-->
+                    <div class="hidden-xs col-sm-6 col-md-5">
+                        <div class="sapo_adward">
+                            <a href="#">
+                                Sản phẩm đạt giải Sao Khuê 2015
+                            </a>
+                            <img src="~/Source/images/icon-cup.png">
+                        </div>
+                    </div>
+                    <!-- End.Sapo_adward (Hidden mobile)-->
+                </div>
+            </div>
+        </div>
+        <!--End sapo footer-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#owl").owlCarousel(
+              {
+                  items: 3,
+                  itemsCustom: false,
+                  itemsDesktop: [1199, 4],
+                  itemsDesktopSmall: [980, 3],
+                  itemsTablet: [768, 2],
+                  itemsTabletSmall: false,
+                  itemsMobile: [479, 1],
+                  singleItem: false,
+                  itemsScaleUp: false,
+                  autoPlay: false,
+                  stopOnHover: false,
+                  pagination: false,
+                  // Navigation
+                  navigation: true,
+                  navigationText: ["<img src='/Source/library/owl/images/prev_slider.png'>", "<img src='/Source/library/owl/images/next_slider.png'>"]
+
+              }
+           );
+            $("#mobnavbtn").click(function () {
+                $(".mobnav").slideToggle("slow");
+            });
+        });
+    </script>
+
+    @RenderBody();
+</body>
+</html>
